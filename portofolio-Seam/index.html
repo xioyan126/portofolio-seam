@@ -1,0 +1,1354 @@
+```html
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+    <!-- =====================================================
+         META DAN INFORMASI WEBSITE
+         ===================================================== -->
+
+    <!-- Menentukan karakter yang digunakan oleh website.
+         UTF-8 mendukung berbagai huruf dan simbol. -->
+    <meta charset="UTF-8">
+
+    <!-- Membuat website menyesuaikan ukuran layar
+         komputer, tablet, dan smartphone. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Judul yang muncul pada tab browser. -->
+    <title>Portfolio | MUHAMAD SIYAM MARZUKI</title>
+
+
+    <!-- =====================================================
+         MENGHUBUNGKAN FILE CSS
+         ===================================================== -->
+
+    <!-- Menghubungkan file HTML dengan style.css.
+         CSS digunakan untuk mengatur warna, ukuran,
+         posisi, layout, animasi, dan tampilan website. -->
+    <link rel="stylesheet" href="style.css">
+
+    
+
+</head>
+
+
+<body>
+
+
+    <!-- =====================================================
+         NAVBAR / MENU WEBSITE
+         ===================================================== -->
+
+    <!-- Header merupakan bagian kepala website.
+         class="navbar" digunakan agar bagian ini
+         dapat diatur menggunakan CSS. -->
+    <header class="navbar">
+
+
+        <!-- =================================================
+             LOGO / NAMA
+             ================================================= -->
+
+        <!-- div digunakan sebagai wadah untuk nama/logo. -->
+        <div class="logo">
+
+            <!-- Nama pemilik portfolio. -->
+            MUHAMAD SIYAM MARZUKI
+
+            <!-- span digunakan untuk membuat titik
+                 dapat diberi style berbeda melalui CSS. -->
+            <span>.</span>
+
+        </div>
+
+
+        <!-- =================================================
+             MENU NAVIGASI
+             ================================================= -->
+
+        <!-- nav digunakan untuk membungkus menu navigasi. -->
+        <nav>
+
+            <!--
+                href="#home" berarti ketika diklik,
+                halaman akan menuju elemen yang memiliki
+                id="home".
+            -->
+            <a href="#home">Home</a>
+
+            <!-- Menu menuju bagian About. -->
+            <a href="#about">About</a>
+
+            <!-- Menu menuju bagian Skills. -->
+            <a href="#skills">Skills</a>
+
+            <!-- Menu menuju bagian Portfolio. -->
+            <a href="#portfolio">Portfolio</a>
+
+            <!-- Menu menuju bagian Experience. -->
+            <a href="#experience">Experience</a>
+
+            <!-- Menu menuju bagian Contact. -->
+            <a href="#contact">Contact</a>
+
+        </nav>
+
+
+        <!-- =================================================
+             TOMBOL MENU MOBILE
+             ================================================= -->
+
+        <!--
+            button membuat tombol.
+
+            class="menu-btn"
+            digunakan untuk mengatur tampilannya melalui CSS.
+
+            id="menuBtn"
+            digunakan oleh JavaScript untuk menemukan tombol ini.
+
+            ☰ adalah simbol hamburger menu.
+        -->
+        <button class="menu-btn" id="menuBtn">☰</button>
+
+
+    </header>
+
+
+
+    <!-- =====================================================
+         HERO SECTION
+         ===================================================== -->
+
+    <!--
+        section digunakan untuk membuat satu bagian website.
+
+        class="hero"
+        digunakan untuk desain hero melalui CSS.
+
+        id="home"
+        digunakan agar menu Home dapat menuju bagian ini.
+    -->
+    <section class="hero" id="home">
+
+
+        <!-- =================================================
+             TEKS HERO
+             ================================================= -->
+
+        <div class="hero-text">
+
+
+            <!--
+                Tulisan kecil yang muncul sebelum judul utama.
+            -->
+            <p class="small-title">
+                HELLO, I'M
+            </p>
+
+
+            <!--
+                h1 merupakan heading paling utama
+                dalam halaman website.
+            -->
+            <h1>
+
+                <!-- Teks pertama dari judul. -->
+                Creative
+
+                <!--
+                    span digunakan agar bagian ini
+                    dapat diberi warna/style berbeda.
+                -->
+                <span>&amp; Web Developer</span>
+
+            </h1>
+
+
+            <!--
+                Deskripsi singkat mengenai diri.
+            -->
+            <p class="description">
+
+                Saya seorang creative professional yang sedang
+                mengembangkan kemampuan di bidang web development,
+                desain dan digital content.
+
+            </p>
+
+
+
+            <!-- =================================================
+                 TOMBOL HERO
+                 ================================================= -->
+
+            <div class="hero-buttons">
+
+
+                <!--
+                    Tombol pertama.
+
+                    href="#portfolio"
+                    akan membawa pengunjung ke Portfolio.
+
+                    class="btn primary"
+                    berarti tombol memiliki dua class:
+                    btn dan primary.
+                -->
+                <a href="#portfolio" class="btn primary">
+
+                    Lihat Portfolio
+
+                </a>
+
+
+                <!--
+                    Tombol kedua menuju Contact.
+                -->
+                <a href="#contact" class="btn secondary">
+
+                    Hubungi Saya
+
+                </a>
+
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- =================================================
+             KARTU FOTO PROFIL
+             ================================================= -->
+
+        <div class="hero-card">
+
+
+            <!-- Wadah untuk foto profil. -->
+            <div class="profile-photo">
+
+
+                <!--
+                    img digunakan untuk menampilkan gambar.
+
+                    src="image/prof2.png"
+                    berarti gambar berada di folder image
+                    dengan nama prof2.png.
+
+                    alt digunakan sebagai teks alternatif
+                    apabila gambar tidak dapat ditampilkan.
+                -->
+                <img
+                    src="image/prof2.png"
+                    alt="Foto Profil MUHAMAD SIYAM MARZUKI"
+                >
+
+
+            </div>
+
+
+            <!-- Informasi yang berada di bawah foto. -->
+            <div class="card-info">
+
+
+                <!-- Judul kartu. -->
+                <h3>
+                    Creative &amp; Developer
+                </h3>
+
+
+                <!-- Deskripsi singkat. -->
+                <p>
+                    Design • Content • Web
+                </p>
+
+
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- =====================================================
+         ABOUT SECTION
+         ===================================================== -->
+
+    <section class="section" id="about">
+
+
+        <!-- Judul section. -->
+        <div class="section-title">
+
+
+            <!-- Judul kecil. -->
+            <p>
+                ABOUT ME
+            </p>
+
+
+            <!-- Judul utama. -->
+            <h2>
+                Tentang Saya
+            </h2>
+
+
+        </div>
+
+
+
+        <!-- =================================================
+             ISI ABOUT
+             ================================================= -->
+
+        <div class="about-content">
+
+
+            <!-- Bagian teks About. -->
+            <div class="about-text">
+
+
+                <!-- Judul kecil About. -->
+                <h3>
+
+                    Menggabungkan kreativitas
+                    dengan teknologi.
+
+                </h3>
+
+
+                <!-- Paragraf pertama. -->
+                <p>
+
+                    Saya memiliki pengalaman di bidang creative,
+                    khususnya dalam pembuatan konten, desain visual,
+                    fotografi dan video.
+
+                </p>
+
+
+                <!-- Paragraf kedua. -->
+                <p>
+
+                    Saat ini saya sedang mempelajari web development
+                    untuk mengembangkan kemampuan saya dalam membuat
+                    website yang modern, responsive dan menarik.
+
+                </p>
+
+
+            </div>
+
+
+
+            <!-- =================================================
+                 KOTAK STATISTIK
+                 ================================================= -->
+
+            <div class="about-box">
+
+
+                <!-- Statistik pertama. -->
+                <div>
+
+                    <!-- Angka utama. -->
+                    <strong>
+                        4+
+                    </strong>
+
+                    <!-- Keterangan angka. -->
+                    <span>
+                        Tahun Pengalaman Creative
+                    </span>
+
+                </div>
+
+
+                <!-- Statistik kedua. -->
+                <div>
+
+                    <strong>
+                        20+
+                    </strong>
+
+                    <span>
+                        Project
+                    </span>
+
+                </div>
+
+
+                <!-- Statistik ketiga. -->
+                <div>
+
+                    <strong>
+                        ∞
+                    </strong>
+
+                    <span>
+                        Semangat Belajar
+                    </span>
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- =====================================================
+         SKILLS SECTION
+         ===================================================== -->
+
+    <section
+        class="section skills-section"
+        id="skills"
+    >
+
+
+        <!-- Judul Skills. -->
+        <div class="section-title">
+
+
+            <p>
+                MY SKILLS
+            </p>
+
+
+            <h2>
+                Keahlian
+            </h2>
+
+
+        </div>
+
+
+
+        <!-- =================================================
+             KUMPULAN KARTU SKILL
+             ================================================= -->
+
+        <div class="skills-grid">
+
+
+            <!-- =================================================
+                 SKILL 01
+                 ================================================= -->
+
+            <div class="skill-card">
+
+    <!-- Nomor skill -->
+    <span class="skill-number">01</span>
+
+    <!-- Icon HTML -->
+    <div class="skill-icon">
+        <img src="image/HTML.png" alt="HTML Icon">
+    </div>
+
+    <!-- Nama skill -->
+    <h3>HTML</h3>
+
+    <!-- Penjelasan skill -->
+    <p>
+        Membuat struktur website menggunakan HTML
+        yang terstruktur dan semantic.
+    </p>
+
+</div>
+
+
+
+            <!-- =================================================
+                 SKILL 02
+                 ================================================= -->
+
+            <div class="skill-card">
+
+                <span>
+                    02
+                </span>
+
+                <!-- Icon CSS -->
+    <div class="skill-icon">
+        <img src="image/CSS.png" alt="HTML Icon">
+    </div>
+
+
+                <h3>
+                    CSS
+                </h3>
+
+                <p>
+
+                    Membuat tampilan website modern,
+                    responsive dan menarik.
+
+                </p>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 SKILL 03
+                 ================================================= -->
+
+            <div class="skill-card">
+
+                <span>
+                    03
+                </span>
+
+                <!-- Icon scrip.js -->
+    <div class="skill-icon">
+        <img src="image/JS.png" alt="HTML Icon">
+    </div>
+
+                <h3>
+                    JavaScript
+                </h3>
+
+                <p>
+
+                    Menambahkan interaksi dan fungsi
+                    pada website.
+
+                </p>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 SKILL 04
+                 ================================================= -->
+
+            <div class="skill-card">
+
+                <span>
+                    04
+                </span>
+                <!-- Icon capcut -->
+    <div class="skill-icon">
+        <img src="image/CapCut.png" alt="HTML Icon">
+    </div>
+
+
+                <h3>
+                    Editing CapCut
+                </h3>
+
+                <p>
+
+                    Editing Video visual untuk kebutuhan
+                    digital dan promosi.
+
+                </p>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 SKILL 05
+                 ================================================= -->
+
+            <div class="skill-card">
+
+                <span>
+                    05
+                </span>
+
+                <!-- Icon Premiere -->
+    <div class="skill-icon">
+        <img src="image/Premiere.png" alt="HTML Icon">
+    </div>
+
+
+                <h3>
+                    Adobe Premiere
+                </h3>
+
+                <p>
+
+                    Editing video untuk kebutuhan
+                    marketing dan social media.
+
+                </p>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 SKILL 06
+                 ================================================= -->
+
+            <div class="skill-card">
+
+                <span>
+                    06
+                </span>
+
+                <!-- Icon Photoshop -->
+    <div class="skill-icon">
+        <img src="image/Photoshop.png" alt="HTML Icon">
+    </div>
+
+                <h3>
+                    Adobe Photoshop
+                </h3>
+
+                <p>
+
+                    Membuat konsep dan konten visual
+                    untuk berbagai kebutuhan bisnis.
+
+                </p>
+
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- =====================================================
+         PORTFOLIO SECTION
+         ===================================================== -->
+
+    <section
+        class="section"
+        id="portfolio"
+    >
+
+
+        <!-- Judul Portfolio. -->
+        <div class="section-title">
+
+            <p>
+                MY WORK
+            </p>
+
+            <h2>
+                Portfolio
+            </h2>
+
+        </div>
+
+
+
+        <!-- =================================================
+             GRID PORTFOLIO
+             ================================================= -->
+
+        <div class="portfolio-grid">
+
+
+
+            <!-- =================================================
+                 PROJECT 01 - FURNITURE
+                 ================================================= -->
+
+           <article class="portfolio-card">
+
+    <!-- Tempat slider gambar project -->
+    <div class="project-image slider">
+
+
+        <!-- FOTO 1 -->
+        <img
+            src="image/Furni3.jpg"
+            alt="Furniture Content 1"
+            class="slide active"
+        >
+
+
+        <!-- FOTO 2 -->
+        <img
+            src="image/Furni2.jpg"
+            alt="Furniture Content 2"
+            class="slide"
+        >
+
+
+        <!-- FOTO 3 -->
+        <img
+            src="image/Furni4.jpg"
+            alt="Furniture Content 3"
+            class="slide"
+        >
+
+
+        <!-- TOMBOL KIRI -->
+        <button
+            class="slider-btn prev"
+            type="button"
+        >
+            ‹
+        </button>
+
+
+        <!-- TOMBOL KANAN -->
+        <button
+            class="slider-btn next"
+            type="button"
+        >
+            ›
+        </button>
+
+
+        <!-- INDIKATOR SLIDER -->
+        <div class="slider-dots">
+
+            <span class="dot active"></span>
+
+            <span class="dot"></span>
+
+            <span class="dot"></span>
+
+        </div>
+
+    </div>
+
+
+    <!-- Informasi project -->
+    <div class="project-info">
+
+
+        <!-- Kategori project -->
+        <p>
+            CREATIVE PROJECT
+        </p>
+
+
+        <!-- Nama project -->
+        <h3>
+            Furniture Content
+        </h3>
+
+
+        <!-- Jenis pekerjaan -->
+        <span>
+            Photography
+        </span>
+
+
+    </div>
+
+</article>
+
+
+
+            <!-- =================================================
+                 PROJECT 02 - WEDDING
+                 ================================================= -->
+
+            <article class="portfolio-card">
+
+
+                
+    <!-- Tempat slider gambar project -->
+    <div class="project-image slider">
+
+
+        <!-- FOTO 1 -->
+        <img
+            src="image/Wed1.jpeg"
+            alt="Furniture Content 1"
+            class="slide active"
+        >
+
+
+        <!-- FOTO 2 -->
+        <img
+            src="image/Wed2.jpeg"
+            alt="Furniture Content 2"
+            class="slide"
+        >
+
+
+        <!-- FOTO 3 -->
+        <img
+            src="image/Wed4.jpeg"
+            alt="Furniture Content 3"
+            class="slide"
+        >
+
+
+        <!-- TOMBOL KIRI -->
+        <button
+            class="slider-btn prev"
+            type="button"
+        >
+            ‹
+        </button>
+
+
+        <!-- TOMBOL KANAN -->
+        <button
+            class="slider-btn next"
+            type="button"
+        >
+            ›
+        </button>
+
+
+        <!-- INDIKATOR SLIDER -->
+        <div class="slider-dots">
+
+            <span class="dot active"></span>
+
+            <span class="dot"></span>
+
+            <span class="dot"></span>
+
+        </div>
+
+    </div>
+
+
+                <div class="project-info">
+
+
+                    <p>
+                        CREATIVE PROJECT
+                    </p>
+
+
+                    <h3>
+                        Wedding
+                    </h3>
+
+
+                    <span>
+                        Photography
+                    </span>
+
+
+                </div>
+
+
+            </article>
+
+
+
+            <!-- =================================================
+                 PROJECT 03 - JEWELRY
+                 ================================================= -->
+
+            <article class="portfolio-card">
+
+
+               
+    <!-- Tempat slider gambar project -->
+    <div class="project-image slider">
+
+
+        <!-- FOTO 1 -->
+        <img
+            src="image/Jew1.jpg"
+            alt="Furniture Content 1"
+            class="slide active"
+        >
+
+
+        <!-- FOTO 2 -->
+        <img
+            src="image/Jew2.jpg"
+            alt="Furniture Content 2"
+            class="slide"
+        >
+
+
+
+        <!-- TOMBOL KIRI -->
+        <button
+            class="slider-btn prev"
+            type="button"
+        >
+            ‹
+        </button>
+
+
+        <!-- TOMBOL KANAN -->
+        <button
+            class="slider-btn next"
+            type="button"
+        >
+            ›
+        </button>
+
+
+        <!-- INDIKATOR SLIDER -->
+        <div class="slider-dots">
+
+            <span class="dot active"></span>
+
+            <span class="dot"></span>
+
+        </div>
+
+    </div>
+
+
+                <div class="project-info">
+
+
+                    <p>
+                        CREATIVE PROJECT
+                    </p>
+
+
+                    <h3>
+                        Jewelry Content
+                    </h3>
+
+
+                    <span>
+                        Product • Photography
+                    </span>
+
+
+                </div>
+
+
+            </article>
+
+
+
+            <!-- =================================================
+                 PROJECT 04 - LAUNDRY
+                 ================================================= -->
+
+            <article class="portfolio-card">
+
+
+               
+    <!-- Tempat slider gambar project -->
+    <div class="project-image slider">
+
+
+        <!-- FOTO 1 -->
+        <img
+            src="image/Laund1.jpg"
+            alt="Furniture Content 1"
+            class="slide active"
+        >
+
+
+        <!-- FOTO 2 -->
+        <img
+            src="image/Laund2.jpg"
+            alt="Furniture Content 2"
+            class="slide"
+        >
+
+
+        <!-- FOTO 3 -->
+        <img
+            src="image/Laund3.jpg"
+            alt="Furniture Content 3"
+            class="slide"
+        >
+
+
+        <!-- TOMBOL KIRI -->
+        <button
+            class="slider-btn prev"
+            type="button"
+        >
+            ‹
+        </button>
+
+
+        <!-- TOMBOL KANAN -->
+        <button
+            class="slider-btn next"
+            type="button"
+        >
+            ›
+        </button>
+
+
+        <!-- INDIKATOR SLIDER -->
+        <div class="slider-dots">
+
+            <span class="dot active"></span>
+
+            <span class="dot"></span>
+
+            <span class="dot"></span>
+
+        </div>
+
+    </div>
+
+
+                <div class="project-info">
+
+
+                    <p>
+                        CREATIVE PROJECT
+                    </p>
+
+
+                    <h3>
+                        Laundry Machine
+                    </h3>
+
+
+                    <span>
+                        Marketing • Content • Photography
+                    </span>
+
+
+                </div>
+
+
+            </article>
+
+
+
+            <!-- =================================================
+                 PROJECT 05 - WEB DEVELOPMENT
+                 ================================================= -->
+
+            <article class="portfolio-card">
+
+
+                <div class="project-image">
+
+
+                    <img
+                        src="image/Dev1.jpg"
+                        alt="Web Development"
+                    >
+
+
+                </div>
+
+
+                <div class="project-info">
+
+
+                    <p>
+                        WEB DEVELOPMENT
+                    </p>
+
+
+                    <h3>
+                        Personal Portfolio
+                    </h3>
+
+
+                    <span>
+                        HTML • CSS • JavaScript
+                    </span>
+
+
+                </div>
+
+
+            </article>
+
+
+
+            <!-- =================================================
+                 PROJECT 06 - SOCIAL MEDIA
+                 ================================================= -->
+
+            <article class="portfolio-card">
+
+    <!-- BAGIAN VIDEO -->
+    <div class="project-image">
+
+        <video
+            src="video/Video1.MOV"
+            controls
+            muted
+            loop
+            playsinline
+        ></video>
+
+    </div>
+
+
+    <!-- INFORMASI PROJECT -->
+    <div class="project-info">
+
+        <p>
+            VIDEO PROJECT
+        </p>
+
+        <h3>
+            Social Media Content
+        </h3>
+
+        <span>
+            Video Editing • Content Creation
+        </span>
+
+    </div>
+
+</article>
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- =====================================================
+         EXPERIENCE SECTION
+         ===================================================== -->
+
+    <section
+        class="section experience"
+        id="experience"
+    >
+
+
+        <!-- Judul Experience. -->
+        <div class="section-title">
+
+            <p>
+                EXPERIENCE
+            </p>
+
+            <h2>
+                Pengalaman
+            </h2>
+
+        </div>
+
+
+
+        <!-- =================================================
+             TIMELINE
+             ================================================= -->
+
+        <div class="timeline">
+
+
+            <!-- =================================================
+                 EXPERIENCE 01
+                 ================================================= -->
+
+            <div class="timeline-item">
+
+
+                <!-- Tahun pengalaman. -->
+                <div class="timeline-year">
+
+                    2021 — NOW
+
+                </div>
+
+
+                <!-- Informasi pekerjaan. -->
+                <div>
+
+
+                    <h3>
+                        Creative / Content Creator
+                    </h3>
+
+
+                    <p>
+
+                        Membuat berbagai kebutuhan visual,
+                        foto, video dan desain untuk kebutuhan
+                        bisnis dan promosi.
+
+                    </p>
+
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- =================================================
+                 EXPERIENCE 02
+                 ================================================= -->
+
+            <div class="timeline-item">
+
+
+                <div class="timeline-year">
+
+                    2026 — NOW
+
+                </div>
+
+
+                <div>
+
+
+                    <h3>
+                        Learning Web Development
+                    </h3>
+
+
+                    <p>
+
+                        Mempelajari HTML, CSS, JavaScript,
+                        Git, GitHub dan teknologi web lainnya.
+
+                    </p>
+
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- =====================================================
+         CONTACT SECTION
+         ===================================================== -->
+
+    <section
+        class="contact"
+        id="contact"
+    >
+
+
+        <!-- Tulisan kecil contact. -->
+        <p>
+            LET'S WORK TOGETHER
+        </p>
+
+
+        <!-- Judul contact. -->
+        <h2>
+
+            Punya project?
+
+            <!--
+                span digunakan agar "Hubungi saya"
+                dapat diberikan warna/style berbeda.
+            -->
+            <span>
+                Hubungi saya.
+            </span>
+
+        </h2>
+
+
+
+        <!-- =================================================
+             TOMBOL WHATSAPP
+             ================================================= -->
+
+        <!--
+            href berisi alamat WhatsApp.
+
+            target="_blank"
+            membuat WhatsApp dibuka di tab baru.
+
+            class="contact-button"
+            digunakan untuk mengatur desain tombol
+            melalui CSS.
+        -->
+        <a
+            href="https://wa.me/6282248646909"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="contact-button"
+        >
+
+            WhatsApp Saya →
+
+        </a>
+
+
+    </section>
+
+
+
+    <!-- =====================================================
+         FOOTER
+         ===================================================== -->
+
+    <footer>
+
+
+        <!-- Nama/logo di bagian footer. -->
+        <div class="logo">
+
+
+            MUHAMAD SIYAM MARZUKI
+
+            <span>
+                .
+            </span>
+
+
+        </div>
+
+
+        <!-- Copyright website. -->
+        <p>
+
+            © 2026 MUHAMAD SIYAM MARZUKI.
+            All Rights Reserved.
+
+        </p>
+
+
+    </footer>
+
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+         ===================================================== -->
+
+    <!--
+        Menghubungkan HTML dengan file script.js.
+
+        JavaScript digunakan untuk membuat website
+        menjadi interaktif.
+
+        Contohnya:
+        - Menu mobile
+        - Slider
+        - Animasi
+        - Tombol interaktif
+        - Efek saat scroll
+    -->
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
+```
