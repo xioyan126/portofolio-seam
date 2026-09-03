@@ -1629,6 +1629,595 @@ nav a:hover {
 }
 
 
+
+/*
+   Section Contact.
+*/
+.contact {
+
+    /*
+       Tinggi minimum.
+    */
+    min-height: 500px;
+
+    padding: 120px 8%;
+
+    /*
+       Flexbox.
+    */
+    display: flex;
+
+    /*
+       Elemen disusun ke bawah.
+    */
+    flex-direction: column;
+
+    /*
+       Posisi horizontal tengah.
+    */
+    align-items: center;
+
+    /*
+       Posisi vertikal tengah.
+    */
+    justify-content: center;
+
+    /*
+       Semua tulisan berada di tengah.
+    */
+    text-align: center;
+
+    /*
+       Efek cahaya background.
+    */
+    background:
+        radial-gradient(
+            circle,
+            rgba(168, 85, 247, 0.15),
+            transparent 50%
+        );
+
+}
+
+
+/*
+   Tulisan kecil Contact.
+*/
+.contact > p {
+
+    color: #efecf2;
+
+    letter-spacing: 4px;
+
+    font-size: 12px;
+
+}
+
+
+/*
+   Judul Contact.
+*/
+.contact h2 {
+
+    /*
+       Ukuran otomatis mengikuti layar.
+    */
+    font-size: clamp(40px, 6vw, 75px);
+
+    line-height: 1.1;
+
+    margin: 25px 0 40px;
+
+}
+
+
+/*
+   Warna tulisan pada span Contact.
+*/
+.contact h2 span {
+
+    color: #efecf2;
+
+}
+
+
+/*
+   Tombol WhatsApp.
+*/
+.contact-button {
+
+    text-decoration: none;
+
+    padding: 16px 30px;
+
+    background: #97e895;
+
+    color: black;
+
+    border-radius: 5px;
+
+    /*
+       Animasi hover.
+    */
+    transition: 0.3s;
+
+}
+
+
+/*
+   Efek ketika tombol WhatsApp
+   disentuh mouse.
+*/
+.contact-button:hover {
+
+    transform: translateY(-3px);
+
+}
+
+
+/* =========================================================
+   11. FOOTER
+   ========================================================= */
+
+
+/*
+   Bagian paling bawah website.
+*/
+footer {
+
+    padding: 35px 8%;
+
+    display: flex;
+
+    /*
+       Posisi vertikal tengah.
+    */
+    align-items: center;
+
+    /*
+       Logo di kiri,
+       copyright di kanan.
+    */
+    justify-content: space-between;
+
+    /*
+       Garis atas footer.
+    */
+    border-top: 1px solid #222;
+
+}
+
+
+/*
+   Tulisan copyright.
+*/
+footer p {
+
+    color: #666;
+
+    font-size: 13px;
+
+}
+
+
+/* =========================================================
+   12. RESPONSIVE TABLET
+   ========================================================= */
+
+/*
+   Media query digunakan untuk membuat
+   website menyesuaikan ukuran layar.
+
+   max-width: 900px berarti aturan ini
+   aktif ketika lebar layar 900px atau lebih kecil.
+*/
+@media (max-width: 900px) {
+
+
+    /* =====================================================
+       MENU MOBILE
+       ===================================================== */
+
+
+    /*
+       Menu desktop disembunyikan.
+    */
+    nav {
+
+        display: none;
+
+        /*
+           Menu akan muncul di bawah navbar.
+        */
+        position: absolute;
+
+        top: 80px;
+
+        left: 0;
+
+        width: 100%;
+
+        padding: 30px;
+
+        /*
+           Menu disusun vertikal.
+        */
+        flex-direction: column;
+
+        background: #111114;
+
+        text-align: center;
+
+    }
+
+
+    /*
+       JavaScript akan menambahkan
+       class "active" pada nav.
+
+       Ketika ada class active,
+       menu akan ditampilkan.
+    */
+    nav.active {
+
+        display: flex;
+
+    }
+
+
+    /*
+       Tombol hamburger ditampilkan.
+    */
+    .menu-btn {
+
+        display: block;
+
+    }
+
+
+    /* =====================================================
+       HERO TABLET
+       ===================================================== */
+
+
+    .hero {
+
+        /*
+           Elemen hero disusun ke bawah.
+        */
+        flex-direction: column;
+
+        /*
+           Tulisan berada di tengah.
+        */
+        text-align: center;
+
+        /*
+           Jarak atas dikurangi.
+        */
+        padding-top: 130px;
+
+    }
+
+
+    /*
+       Deskripsi berada di tengah.
+    */
+    .description {
+
+        margin-left: auto;
+
+        margin-right: auto;
+
+    }
+
+
+    /*
+       Tombol berada di tengah.
+    */
+    .hero-buttons {
+
+        justify-content: center;
+
+    }
+
+
+    /* =====================================================
+       ABOUT TABLET
+       ===================================================== */
+
+
+    /*
+       About menjadi satu kolom.
+    */
+    .about-content {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    /* =====================================================
+       SKILLS TABLET
+       ===================================================== */
+
+
+    /*
+       Skills menjadi 2 kolom.
+    */
+    .skills-grid {
+
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+
+    /* =====================================================
+       PORTFOLIO TABLET
+       ===================================================== */
+
+
+    /*
+       Portfolio menjadi satu kolom.
+    */
+    .portfolio-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    /*
+       Ukuran kartu foto diperkecil.
+    */
+    .hero-card {
+
+        width: 300px;
+
+        height: 350px;
+
+    }
+
+
+}
+
+
+/* =========================================================
+   13. RESPONSIVE SMARTPHONE
+   ========================================================= */
+
+/*
+   Aturan ini digunakan untuk layar
+   smartphone dengan lebar maksimal 600px.
+*/
+@media (max-width: 600px) {
+
+
+    /* =====================================================
+       NAVBAR SMARTPHONE
+       ===================================================== */
+
+
+    .navbar {
+
+        /*
+           Jarak kiri kanan diperkecil.
+        */
+        padding: 0 5%;
+
+    }
+
+
+    /* =====================================================
+       SECTION SMARTPHONE
+       ===================================================== */
+
+
+    /*
+       Jarak kiri dan kanan
+       semua section diperkecil.
+    */
+    .hero,
+    .section {
+
+        padding-left: 5%;
+
+        padding-right: 5%;
+
+    }
+
+
+    /* =====================================================
+       JUDUL HERO
+       ===================================================== */
+
+
+    .hero h1 {
+
+        /*
+           Jarak huruf dikurangi
+           agar tidak terlalu melebar.
+        */
+        letter-spacing: -2px;
+
+    }
+
+
+    /* =====================================================
+       JUDUL SECTION
+       ===================================================== */
+
+
+    .section-title h2 {
+
+        /*
+           Ukuran judul diperkecil.
+        */
+        font-size: 40px;
+
+    }
+
+
+    /* =====================================================
+       SKILLS SMARTPHONE
+       ===================================================== */
+
+
+    /*
+       Skill menjadi satu kolom.
+    */
+    .skills-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    /* =====================================================
+       EXPERIENCE SMARTPHONE
+       ===================================================== */
+
+
+    .timeline-item {
+
+        /*
+           Tahun dan informasi
+           menjadi satu kolom.
+        */
+        grid-template-columns: 1fr;
+
+        gap: 10px;
+
+    }
+
+
+    /* =====================================================
+       FOOTER SMARTPHONE
+       ===================================================== */
+
+
+    footer {
+
+        /*
+           Logo dan copyright
+           disusun vertikal.
+        */
+        flex-direction: column;
+
+        gap: 15px;
+
+        text-align: center;
+
+    }
+
+
+    /* =====================================================
+       TOMBOL HERO SMARTPHONE
+       ===================================================== */
+
+
+    .hero-buttons {
+
+        /*
+           Tombol tetap bisa menyesuaikan
+           lebar layar.
+        */
+        flex-wrap: wrap;
+
+    }
+
+
+    /* =====================================================
+       HERO CARD SMARTPHONE
+       ===================================================== */
+
+
+    .hero-card {
+
+        /*
+           Lebar maksimal agar tidak
+           keluar dari layar HP.
+        */
+        width: min(300px, 90vw);
+
+        height: 350px;
+
+    }
+
+    /* =====================================================
+   CONTACT LINKS
+   ===================================================== */
+
+.contact-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.instagram-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    padding: 12px 22px;
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 12px;
+
+    color: white;
+    text-decoration: none;
+
+    font-size: 16px;
+
+    transition: 0.3s;
+}
+
+.instagram-icon {
+    width: 22px;
+    height: 22px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.instagram-icon svg {
+    width: 22px;
+    height: 22px;
+}
+
+.instagram-link:hover {
+    color: #9bea9b;
+    border-color: #9bea9b;
+    transform: translateY(-3px);
+}
+
+.whatsapp-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 18px 38px;
+
+    background: #96e89a;
+    color: #050505;
+
+    text-decoration: none;
+    border-radius: 6px;
+
+    font-size: 18px;
+
+    transition: 0.3s;
+}
+
+.whatsapp-link:hover {
+    transform: translateY(-3px);
+}
+
+
 /* =========================================================
    11. FOOTER
    ========================================================= */
@@ -2019,24 +2608,90 @@ footer p {
     }
 
 
-    /* =====================================================
-       CONTACT SMARTPHONE
-       ===================================================== */
-
-
-    .contact {
-
-        padding-left: 5%;
-
-        padding-right: 5%;
-
-    }
-
-
+}
 }
 
+/* ========================================
+   CONTAINER INSTAGRAM + WHATSAPP
+   ======================================== */
+
+.contact-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    margin-top: 20px;
+}
+
+
+/* ========================================
+   INSTAGRAM & WHATSAPP
+   ======================================== */
+
+.instagram-link,
+.whatsapp-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+
+    min-width: 210px;
+
+    padding: 14px 24px;
+
+    border: 1px solid #9bea9b;
+    border-radius: 12px;
+
+    color: #9bea9b;
+
+    text-decoration: none;
+
+    font-size: 17px;
+
+    transition: all 0.3s ease;
+}
+
+
+/* ========================================
+   UKURAN ICON
+   ======================================== */
+
+.instagram-link svg,
+.whatsapp-link svg {
+    width: 25px;
+    height: 25px;
+
+    flex-shrink: 0;
+}
+
+
+/* ========================================
+   HOVER INSTAGRAM
+   ======================================== */
+
+.instagram-link:hover {
+    background: rgba(155, 234, 155, 0.1);
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 0 15px rgba(155, 234, 155, 0.25);
+}
+
+
+/* ========================================
+   HOVER WHATSAPP
+   ======================================== */
+
+.whatsapp-link:hover {
+    background: rgba(155, 234, 155, 0.1);
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 0 15px rgba(155, 234, 155, 0.25);
+}
 
 /* =========================================================
    SELESAI
    ========================================================= */
-
